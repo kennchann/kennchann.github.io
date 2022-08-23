@@ -1,0 +1,937 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #ebebeb;
+}
+
+body {
+    font-family: 'Helvetica', 'Microsoft JhengHei', 'STHeiti';
+    font-size: 12px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.container {
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form {
+    margin: 50px 50px 30px 50px;
+    padding-bottom: 30px;
+    background: white;
+}
+
+.wrapper {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: auto;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background: orange;
+}
+
+.section {
+    display: flex;
+    padding: 0 10px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sectiontitle {
+    font-style: italic;
+    position: relative;
+    display: flex;
+    padding: 30px 39px 20px 39px;
+    text-align: center;
+    color: #c0c0c0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionname {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+    transform: translate(-50%, -25%);
+    background: #fff;
+}
+
+.divider1 {
+    width: 100%;
+    height: 1px;
+    background: #c0c0c0;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    background: #c0c0c0;
+}
+
+.col {
+    width: 50%;
+    padding: 0 30px;
+    flex-grow: 1;
+}
+
+.field {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+}
+
+input, select, option {
+    width: 160px;
+    height: 28px;
+    margin-left: 50px;
+    padding: 0 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 0;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    margin-left: 50px;
+    padding: 6px 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 0;
+    background-color: #fff;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#billing {
+    width: 550px;
+}
+
+#instruction {
+    width: 550px;
+    height: 84px;
+}
+
+select {
+    cursor: pointer;
+}
+
+option:first-child {
+    text-align: center;
+}
+
+label {
+    width: 120px;
+}
+
+/* The container */
+.radiocontainer {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiocontainer input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14.5px;
+    height: 14.5px;
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* On mouse-over, add a grey background color */
+.radiocontainer:hover input ~ .checkmark {
+    background-color: #d3d3d3;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiocontainer input:checked ~ .checkmark {
+    border: transparent;
+    background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiocontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiocontainer .checkmark:after {
+    top: 4.5px;
+    left: 4.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* The container2 */
+.radiocontainer2 {
+    font-size: 12px;
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiocontainer2 input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14.5px;
+    height: 14.5px;
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* On mouse-over, add a grey background color */
+.radiocontainer2:hover input ~ .checkmark {
+    background-color: #d3d3d3;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiocontainer2 input:checked ~ .checkmark {
+    border: transparent;
+    background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiocontainer2 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiocontainer2 .checkmark:after {
+    top: 4.5px;
+    left: 4.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+.checkmark {
+    cursor: pointer;
+}
+
+label > span {
+    cursor: pointer;
+}
+
+.month1, .month2 {
+    display: inline-block;
+    width: 160px;
+    height: 28px;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px 100px 10px 100px;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+    background-image: url('../img/common/icon-cal.png');
+    background-repeat: no-repeat;
+    background-position: 97.5% 3px;
+    background-size: 19px 19px;
+}
+
+.form-control {
+    display: inline-block;
+    width: 160px;
+    height: 28px;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px 100px 10px 100px;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+    background-image: url('../img/common/icon-cal.png');
+    background-repeat: no-repeat;
+    background-position: 97.5% 3px;
+    background-size: 19px 19px;
+}
+
+.radiofield {
+    display: flex;
+    width: 550px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.radiofield2 {
+    display: flex;
+    width: 550px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.radiofield > div {
+    width: 100%;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.radiofield2 {
+    align-items: center;
+}
+
+.radiocontainer2 {
+    margin-left: 50px;
+}
+
+#carchoice1 {
+    width: 100px;
+    margin-left: 0;
+}
+
+#carchoice2 {
+    width: 100px;
+    margin-left: 0;
+}
+
+.field2 {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0 40px 0 40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.field3 {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.file {
+    display: inline-block;
+    width: 270px;
+    height: 28px;
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+}
+
+.field .v-top {
+    align-items: normal;
+}
+
+.field2 .v-top {
+    margin-bottom: 0;
+    padding-left: 0;
+    align-items: normal;
+}
+
+.filebtn {
+    font-size: 14px;
+    display: inline-block;
+    width: 95px;
+    height: 28px;
+    margin-left: 10px;
+    padding-top: 3px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    background: #c0c0c0;
+}
+
+.filefield {
+    margin-left: 50px;
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5%;
+}
+
+.info br {
+    display: none;
+}
+
+.benzbr br, .toyotabr br {
+    display: none;
+}
+
+.reminder {
+    font-style: italic;
+    display: flex;
+    margin-top: 5px;
+    color: #c0c0c0;
+}
+
+.rules {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.para {
+    font-size: 15px;
+    overflow: auto;
+    width: 100%;
+    height: 300px;
+    padding: 5px 5px;
+    border: 1px solid #c0c0c0;
+}
+
+.btn:hover, .btn2:hover {
+    opacity: .8;
+}
+
+.row {
+    text-align: center;
+}
+
+.btn {
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 240px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 13.5px 60px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    background: orange;
+}
+
+.btn:before {
+    position: absolute;
+    top: 0;
+    left: -23px;
+    width: 25px;
+    height: 100%;
+    content: '';
+    background-image: url(../img/btn-triangle-orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.btn:after {
+    position: absolute;
+    top: 0;
+    right: -23px;
+    width: 25px;
+    height: 100%;
+    content: '';
+    transform: rotate(180deg);
+    background-image: url(../img/btn-triangle-orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.btn2 {
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 240px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 13.5px 60px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    background: orange;
+}
+
+.btn2:before {
+    position: absolute;
+    top: 0;
+    left: -23px;
+    width: 25px;
+    height: 100%;
+    content: '';
+    background-image: url(../img/btn-triangle-orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.btn2:after {
+    position: absolute;
+    top: 0;
+    right: -23px;
+    width: 25px;
+    height: 100%;
+    content: '';
+    transform: rotate(180deg);
+    background-image: url(../img/btn-triangle-orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#passengernum1 {
+    margin-top: 10px;
+    background-image: url('../img/common/icon-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 95% 8px;
+    background-size: 12px 12px;
+}
+
+#passengernum2 {
+    margin-top: 10px;
+    background-image: url('../img/common/icon-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 95% 8px;
+    background-size: 12px 12px;
+}
+
+p {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.filetitle {
+    margin-top: -15px;
+}
+
+.datepicker.dropdown-menu {
+    position: absolute;
+    top: 534.5px;
+    left: 595.5px;
+    border: 1px solid #d3d3d3;
+    background: white;
+}
+
+.prev {
+    transform: rotate(90deg);
+    background-image: url('../img/common/icon-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 12px 12px;
+}
+
+.next {
+    transform: rotate(270deg);
+    background-image: url('../img/common/icon-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 12px 12px;
+}
+
+@media screen and (max-width:1200px) {
+    input {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    select {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .reminder {
+        margin-bottom: 5px;
+    }
+
+    .filefield {
+        margin-left: 0;
+    }
+
+    .filetitle {
+        margin-top: -35px;
+    }
+
+    .field3 {
+        margin-bottom: 0;
+    }
+
+    #passengernum1, #passengernum2 {
+        background-position: 97% 8px;
+    }
+
+    #billing {
+        width: 100%;
+    }
+
+    #instruction {
+        width: 100%;
+    }
+
+    .radiofield > div {
+        margin-left: 0;
+    }
+
+    textarea {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    input {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    select {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .reminder {
+        margin-bottom: 15px;
+    }
+
+    .filefield {
+        margin-left: 0;
+    }
+
+    #passengernum1, #passengernum2 {
+        background-position: 97% 8px;
+    }
+
+}
+
+@media screen and (max-width:984px) {
+    .radiofield {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:969px) {
+    .radiofield {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:944px) {
+    .radiocontainer2 {
+        margin: 5px 50px 0 0;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .info br {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:769px) {
+    .field3 {
+        margin-top: 20px;
+    }
+
+    .reminder {
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    .section {
+        position: relative;
+        padding: 0;
+    }
+
+    .sectiontitle {
+        padding: 30px 0 20px 0;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info br {
+        display: none;
+    }
+
+    .col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .filefield {
+        width: 100%;
+    }
+
+    .upload {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .file {
+        width: 100%;
+    }
+
+    .filetitle {
+        margin-top: 0;
+    }
+
+    .field2 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .field3 {
+        margin-bottom: 15px;
+    }
+
+    .filebtn {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .divider {
+        width: 100%;
+    }
+
+    .container {
+        width: calc(100% - 40px);
+    }
+
+    .form {
+        margin: 0;
+    }
+
+    .divider {
+        margin-top: 0;
+    }
+
+    #passengernum1, #passengernum2 {
+        background-position: 98% 8px;
+    }
+
+    .form-control {
+        background-position: 99% 3px;
+    }
+
+    .btn:before {
+        position: absolute;
+        top: 0;
+        left: -23px;
+        width: 25px;
+        height: 100%;
+        content: '';
+        background-image: url(../img/btn-triangle-orange.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .btn:after {
+        position: absolute;
+        top: 0;
+        right: -23px;
+        width: 25px;
+        height: 100%;
+        content: '';
+        transform: rotate(180deg);
+        background-image: url(../img/btn-triangle-orange.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .btn {
+        font-size: 20px;
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        max-width: calc(100% - 80px);
+        margin-top: 25px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        background: orange;
+    }
+
+    .btn2:before {
+        position: absolute;
+        top: 0;
+        left: -23px;
+        width: 25px;
+        height: 100%;
+        content: '';
+        background-image: url(../img/btn-triangle-orange.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .btn2:after {
+        position: absolute;
+        top: 0;
+        right: -23px;
+        width: 25px;
+        height: 100%;
+        content: '';
+        transform: rotate(180deg);
+        background-image: url(../img/btn-triangle-orange.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .btn2 {
+        font-size: 20px;
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        max-width: calc(100% - 80px);
+        margin-top: 25px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        background: orange;
+    }
+
+    .radiofield {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:494px) {
+    .radiofield {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .benzbr br, .toyotabr br {
+        display: block;
+    }
+
+}
+
+
+@media all and (-ms-high-contrast:none), (-ms-high-contrast:active) {
+    .field3 {
+        margin-top: 20px;
+    }
+
+}
